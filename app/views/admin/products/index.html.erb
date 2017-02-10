@@ -1,0 +1,24 @@
+<h1>Product List</h1>
+<div class="pull-right">
+  <%= link_to("新增产品", new_admin_product_path, class: "btn btn-default")%>
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>description</th>
+      <th>quantity</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product|%>
+      <tr>
+        <td><%= link_to product.title, admin_product_path(product)%></td>
+        <td><%= product.description%></td>
+        <td><%= product.quantity%></td>
+        <td><%= product.price%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
