@@ -40,6 +40,7 @@ gem 'ransack'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'seo_helper'
+gem 'aasm'
 gem 'letter_opener', group: :development
 group :development, :test do
   gem 'sqlite3'
