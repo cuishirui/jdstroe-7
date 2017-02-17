@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   namespace :admin do
     resources :products
+    resources :orders 
   end
 
   resources :products do
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
     end
 
     collection do
-      get :search 
+      get :search
     end
   end
 
