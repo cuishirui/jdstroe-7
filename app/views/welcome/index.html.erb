@@ -50,8 +50,10 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 
 <!-- thumbnail images-->
+<div id="services" class="container">
 <div class="row text-center">
   <h2>纯棉Bra<br>
 <small>舒适贴合，意料之外自然的棉柔Bra</small>
@@ -62,7 +64,7 @@
       <img src="/images/纯棉bra4.jpg" alt="bar">
       <p><strong>Paris</strong></p>
       <p>Fri. 27 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -70,7 +72,7 @@
       <img src="/images/纯棉bra5.jpg" alt="bra">
       <p><strong>New York</strong></p>
       <p>Sat. 28 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -78,13 +80,13 @@
       <img src="/images/纯棉bra6.jpg" alt="bra">
       <p><strong>San Francisco</strong></p>
       <p>Sun. 29 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
 </div>
 </div>
 
-<div class="container">
+<div id="portfolio" class="container">
 <div class="row text-center">
   <h2>运动Bra<br>
   <small>不要束缚，只要舒服！透气服帖只服它！</small>
@@ -95,7 +97,7 @@
       <img src="https://sc01.alicdn.com/kf/HTB1pJk7KVXXXXcHXVXXq6xXFXXXR/13-Sports-Bra.jpg" alt="bar">
       <p><strong>Paris</strong></p>
       <p>Fri. 27 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -103,7 +105,7 @@
       <img src="http://cdn1.picvpicimg.com/pics/6439213/nike-nike-pro-printed-dri-fit-sports-bra-screen.jpg" alt="bra">
       <p><strong>New York</strong></p>
       <p>Sat. 28 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -111,14 +113,14 @@
       <img src="/images/sport.jpeg"  alt="bra">
       <p><strong>San Francisco</strong></p>
       <p>Sun. 29 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
 </div>
 </div>
 
 
-<div class="container">
+<div id="pricing" class="container">
 <div class="row text-center" style="margin-bottom: 100px;">
   <h2>蕾丝Bra<br>
   <small>魅惑尤物，丝丝扣扣显现你的魅力Bra</small>
@@ -129,7 +131,7 @@
       <img src="/images/蕾丝4.jpg" alt="bar">
       <p><strong>Paris</strong></p>
       <p>Fri. 27 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -137,7 +139,7 @@
       <img src="/images/蕾丝5.jpg" alt="bra">
       <p><strong>New York</strong></p>
       <p>Sat. 28 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
   <div class="col-sm-4">
@@ -145,10 +147,38 @@
       <img src="/images/蕾丝bra3.jpg"  alt="bra">
       <p><strong>San Francisco</strong></p>
       <p>Sun. 29 November 2015</p>
-      <button class="btn">Buy Tickets</button>
+      <button class="btn">加入购物车</button>
     </div>
   </div>
 </div>
 </div>
 
 </div>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>

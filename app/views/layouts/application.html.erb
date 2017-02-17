@@ -8,14 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="container-fluid">
       <%= render "common/navbar"%>
       <%= render "common/flashes"%>
 
     <%= yield %>
     </div>
-  
+
     <%= render "common/footer"%>
   </body>
 </html>

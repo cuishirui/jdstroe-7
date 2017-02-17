@@ -1,14 +1,16 @@
 <div class="row">
-<nav class="navbar navbar-default " role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">IBRA </a>
     </div>
     <div class="collaspe navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li>
-          <%= link_to("Products", products_path)%>
-        </li>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">纯棉Bra</a></li>
+        <li><a href="#portfolio">运动Bra</a></li>
+        <li><a href="#pricing">蕾丝Bra</a></li>
+        
       </ul>
       <div class="nav navbar-nav navbar-left">
       <%= form_tag search_products_path , :method => :get  do %>
