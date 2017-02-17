@@ -17,6 +17,37 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ /* search.html.erb*/
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #0d6ded;
+  font-size: 20px;
+  text-align: center;
+}
+#search-id {
+  width: 400px;
+  padding-top: 7px;
+
+}
+
+.products-show0 {
+  border-bottom: 1px dotted #CCC;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+.products-show {
+  border-bottom: 1px dotted #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+.input-group-btn {
+
+}
+
  /* footer*/
  .footer-color {
    background-color: #380b0b;
@@ -37,7 +68,7 @@
 }
 
 /* Black buttons with extra padding and without rounded borders */
-.btn {
+.thumbnail .btn {
     padding: 10px 20px;
     background-color: #333;
     color: #f1f1f1;
