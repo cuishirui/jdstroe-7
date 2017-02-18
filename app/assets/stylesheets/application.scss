@@ -17,6 +17,27 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ .jumbotron-1 {
+   background-image: url('https://dm.victoriassecret.com/imagefeatures/0x0/1267959380949/021417_Active_Header_Desktop.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 380px;
+ }
+
+ .jumbotron-2 {
+   background-image: url('http://www.vacationmyrtlebeach.com/media/images/HBPOOL.gif');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 500px;
+ }
+ 
+
+
+ .index-family p {
+   font-family: "Times New Roman",Times;
+   font-style: italic;
+ }
+
  /* search.html.erb*/
 .search-info-title {
   font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
@@ -57,9 +78,15 @@
 
  /* Remove border and add padding to thumbnails */
 .thumbnail {
-    padding: 0 0 15px 0;
+    padding: 0 0 0 0;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
+}
+
+.thumbnail:hover, .thumbnail:focus {
+  border: 2px solid #ff521c;
+  background-color: #fff;
+  color: #ff521c;
 }
 
 .thumbnail p {

@@ -1,5 +1,6 @@
 <div class="row row-bgcolor">
   <div class="container-fluid" style="padding-top:100px;">
+    <h1><%= @product.category.name %></h1>
   <div class="col-md-6">
     <% if @product.image.present? %>
       <%= image_tag(@product.image.medium.url) %>
