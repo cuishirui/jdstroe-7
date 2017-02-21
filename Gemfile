@@ -43,6 +43,7 @@ gem 'seo_helper'
 gem 'aasm'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 gem 'letter_opener', group: :development
 group :development, :test do
   gem 'sqlite3'
