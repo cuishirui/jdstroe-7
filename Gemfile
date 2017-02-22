@@ -42,6 +42,7 @@ gem 'will_paginate-bootstrap'
 gem 'seo_helper'
 gem 'aasm'
 gem 'figaro'
+gem 'fog'
 gem 'letter_opener', group: :development
 group :development, :test do
   gem 'sqlite3'
