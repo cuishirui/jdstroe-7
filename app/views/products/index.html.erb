@@ -1,6 +1,6 @@
 
-
-  <div class="container">
+  <div class="row bg-gray">
+  <div class="container text-center">
     <nav class="navbar navbar-inner" style="margin-top:40px; letter-spacing: 4px; font-size: 18px !important; ">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
@@ -33,6 +33,7 @@
   <div class="row text-center">
   <% @products.each do |product| %>
     <div class="col-xs-6 col-md-3">
+      <div class="productlist-item">
       <%= link_to product_path(product) do %>
         <% if product.image.present? %>
           <%= image_tag(product.image.thumb.url,class: "thumbnail") %>
@@ -41,9 +42,11 @@
         <% end %>
       <% end %>
       <strong><%= product.title %></strong> <br>
-       ￥ <%= product.price %>
+       <p style="font-size:20px; color:red;">￥ <%= product.price %></p>
+     </div>
       <br>
     </div>
   <% end %>
+</div>
 </div>
 </div>
