@@ -28,7 +28,7 @@
   <br>
   <% if @products.blank? %>
     <br>
-    <h2 class="search-info-title">搜索信息不能为空，请输入关键字搜索</h2>
+    <h2 class="search-info-title">没有与"<%= @query_string %>"相关信息，请输入关键字搜索</h2>
   <% else %>
     <h2 class="search-info-title"> 有关"<%= @query_string %>"的产品信息 </h2>
     <div class="search-result">
