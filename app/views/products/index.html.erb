@@ -29,10 +29,15 @@
 </div>
   <hr>
 
- <div class="container">
-  <div class="row text-center">
-  <% @products.each do |product| %>
-    <div class="col-sm-3">
+<div class="productList-wrap mt30 bc">
+  <ul class="productList clearfix pl10 pr10 pb20">
+  <% @products.each_with_index do |product, index| %>
+  <% if index > 0 && (index + 1) % 5 == 0 %>
+        <li class="fl productList-item productList-lastItem p15">
+      <% else %>
+        <li class="fl productList-item p15">
+      <% end %>
+      <p class="productList-item-pic w200 h200">
       <%= link_to product_path(product) do %>
         <% if product.image.present? %>
           <%= image_tag(product.image.thumb.url,class: "thumbnail") %>
@@ -40,9 +45,11 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
         <% end %>
       <% end %>
-      <strong><%= product.title %></strong>  ￥ <%= product.price %>
+      </p>
+      <strong><%= product.title %></strong><br>
+        ￥ <%= product.price %>
       <br><br>
-    </div>
   <% end %>
+  </ul>
 </div>
 </div>

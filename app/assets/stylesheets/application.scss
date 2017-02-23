@@ -17,6 +17,44 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ .productList-wrap {
+  width: 1220px;
+}
+.productList {
+  margin-bottom: 0;
+}
+.productList-item {
+  width: 230px;
+  height: 350px;
+  background: #fff;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.09);
+  position: relative;
+  top: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  &:hover {
+    position: relative;
+    top: -5px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.15);
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.productList-lastItem {
+  margin-right: 0;
+}
+.productList-item-name {
+  color: #333;
+}
+.productList-item-desc {
+  color: #808080;
+}
+
+
  .jumbotron-1 {
    background-image: url('https://dm.victoriassecret.com/imagefeatures/0x0/1267959380949/021417_Active_Header_Desktop.jpg');
    background-repeat: no-repeat;
