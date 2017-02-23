@@ -1,4 +1,30 @@
 <div class="row">
+  <div class="container">
+  <nav class="navbar navbar-inner" style="margin-top:40px; letter-spacing: 4px; font-size: 18px !important; ">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <% Category.all.each do |category|%>
+        <li class="text-align text-center" style="padding-left:40px; padding-right:30px;">
+          <%= link_to category.name, products_path(category: category.name), class: "link"%>
+        </li>
+      <% end %>
+    </ul>
+    <div class="nav navbar-nav navbar-left">
+  <div class="form-group" >
+    <%= form_tag search_products_path , :method => :get  do %>
+    <div class="input-group" id="search-id" >
+      <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="请输入产品信息">
+      <div class="input-group-btn">
+        <button class="btn btn-default " type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  </div>
+</nav>
+</div>
   <br>
   <% if @products.blank? %>
     <br>

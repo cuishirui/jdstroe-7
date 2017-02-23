@@ -11,19 +11,21 @@
   </div>
   <div class="col-md-6">
     <h2> <%= @product.title %> </h2>
-    <div style="height:100px;">
-      <p>
-        <%= @product.description %>
-      </p>
-    </div>
+
     <div> 数量 : <%= @product.quantity %> </div>
-    <div class="product-price"> ￥ <%= @product.price %> </div>
+    <div class="product-price"> RMB: <%= @product.price %> </div>
     <div style="padding-top:180px;">
       <% if @product.quantity.present? && @product.quantity > 0%>
         <%= link_to("加入购物车", add_to_cart_product_path(@product),method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
       <% else %>
         已销售一空，无法购买
       <% end %>
+    </div>
+    <div style="height:100px;">
+      <p>
+        <h3>Description</h3><br>
+        <%= @product.description %>
+      </p>
     </div>
   </div>
 </div>
