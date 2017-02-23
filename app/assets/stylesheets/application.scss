@@ -30,12 +30,21 @@
    background-size: cover;
    padding-bottom: 500px;
  }
-
+ .jumbotron-3 {
+   background-image: url('https://dm.victoriassecret.com/imagefeatures/0x0/1267966489379/022017-home-bralettes-offer-1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 380px;
+ }
 
 
  .index-family p {
    font-family: "Times New Roman",Times;
    font-style: italic;
+ }
+ .index-footer{
+   background-color: #222222;
+   color: white;
  }
 
  /* search.html.erb*/
@@ -49,6 +58,10 @@
   width: 400px;
   padding-top: 7px;
 
+}
+.search-image {
+  //width: 80px !important;
+  //height: 80px !important;
 }
 
 .products-show0 {
@@ -81,12 +94,16 @@
     padding: 0 0 0 0;
     border: none;
     border-radius: 5px;
+    transition: box-shadow 0.5s;
 }
 
 .thumbnail:hover, .thumbnail:focus {
   border: 2px solid #ff521c;
   background-color: #fff;
   color: #ff521c;
+  border-radius: 2px;
+  box-shadow: 5px 0px 40px #F7D1CA;
+
 }
 
 .thumbnail p {
@@ -118,16 +135,14 @@
  }
  .carousel-inner img {
    width: 100%; /* Set width to 100% */
-   height: 300px !important;
+   height: 550px !important;
    margin: auto;
 }
 
  .carousel {
    margin-top: 6px;
  }
- .row-bgcolor {
-   background-color: #efbdbd;
- }
+
  .carousel-caption a{
    color: #fff;
  }
@@ -144,6 +159,9 @@
    }
 }
  /* navbar*/
+ .navbar-inner {
+   background-color: white;
+ }
  .navbar-default {
    background-color: #5b1616;
    border: #5b1616;

@@ -5,32 +5,7 @@
       <a class="navbar-brand" href="/">IBRA </a>
     </div>
     <div class="collaspe navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">产品分类 <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
-            <% Category.all.each do |category|%>
-              <li>
-                <%= link_to category.name, products_path(category: category.name), class: "link"%>
-              </li>
-            <% end %>
-          </ul>
-        </li>
-
-      </ul>
-      <div class="nav navbar-nav navbar-left">
-      <%= form_tag search_products_path , :method => :get  do %>
-      <div class="input-group" id="search-id" >
-        <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="请输入产品信息">
-        <div class="input-group-btn">
-          <button class="btn btn-default " type="submit">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </button>
-        </div>
-
-      </div>
-      <% end %>
-    </div>
+      
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to carts_path do %>
