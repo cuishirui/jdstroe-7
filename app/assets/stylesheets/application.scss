@@ -92,17 +92,13 @@
  /* Remove border and add padding to thumbnails */
 .thumbnail {
     padding: 0 0 0 0;
-    border: none;
+    border: 1px solid #f29976;
     border-radius: 5px;
     transition: box-shadow 0.5s;
 }
 
-.thumbnail:hover, .thumbnail:focus {
-  border: 2px solid #ff521c;
-  background-color: #fff;
-  color: #ff521c;
-  border-radius: 2px;
-  box-shadow: 5px 0px 40px #F7D1CA;
+.thumbnail:hover {
+  box-shadow: 5px 5px 40px #918d8b;
 
 }
 
@@ -112,13 +108,7 @@
 }
 
 /* Black buttons with extra padding and without rounded borders */
-.thumbnail .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-}
+
 
 /* On hover, the color of .btn will transition to white with black text */
 .btn:hover, .btn:focus {
