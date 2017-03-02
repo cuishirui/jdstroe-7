@@ -17,6 +17,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ .alert-success {
+   background-color: #d11473;
+ }
+
  .productlist-item{
    width: 230px;
   height: 280px;

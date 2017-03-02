@@ -41,7 +41,7 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
         <% end %>
       <% end %>
-      <strong><%= product.title %></strong> <br>
+      <strong><%= simple_format(product.title) %></strong> <br>
        <p style="font-size:20px; color:red;">￥ <%= product.price %></p>
      </div>
       <br>
