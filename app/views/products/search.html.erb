@@ -46,8 +46,8 @@
               <p style="padding-left: 50px;"><%= link_to(render_highlight_content(product,@query_string),product_path(product)) %></p>
           <div class="search-image">
             <%= link_to product_path(product) do %>
-              <% if product.image.present? %>
-                <%= image_tag(product.image.thumb.url) %>
+              <% if product.photos[0].present? %>
+                <%= image_tag(product.photos[0].avatar.thumb.url) %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
