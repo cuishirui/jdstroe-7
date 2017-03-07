@@ -17,9 +17,27 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .alert-success {
-   background-color: #d11473;
- }
+ .intro-preview {
+	margin-top: 5px;
+	.intro-preview-item {
+		padding: 1px;
+		margin-right: 0px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			width: 70px;
+			height: 70px;
+		}
+	}
+	.intro-preview-item {
+		border-color: #DB3652;
+	}
+}
+.fl {
+  display: inline-block;
+}
+
+
 
  .productlist-item{
    width: 230px;
