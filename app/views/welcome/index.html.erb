@@ -1,79 +1,5 @@
 <div class="row">
-<div class="container">
-  <h3 class="text-center" style="letter-spacing: 4px;">BEST BRA IN THE WORLD</h3>
-  <p class="text-center" style="margin:5px;">NEW YORE ⋅ LONDON ⋅ SHANHAI</p>
-  <nav class="navbar navbar-inverse" style="margin-top:40px; letter-spacing: 4px; font-size: 18px !important; ">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <% Category.all.each do |category|%>
-        <li class="text-align text-center" style="padding-left:40px; padding-right:30px;">
-          <%= link_to category.name, products_path(category: category.name), class: "link"%>
-        </li>
-      <% end %>
-    </ul>
-    <div class="nav navbar-nav navbar-left">
-  <div class="form-group" >
-    <%= form_tag search_products_path , :method => :get  do %>
-    <div class="input-group" id="search-id" >
-      <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="请输入产品信息">
-      <div class="input-group-btn">
-        <button class="btn btn-default " type="submit">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-    <% end %>
-  </div>
-  </div>
-</nav>
-
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="/products">
-        <img src="https://dm.victoriassecret.com/imagefeatures/0x0/1267958461492/021417-bbv-launch-shop-desktop-1-.jpg">
-      </a>
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-
-    <div class="item">
-      <a href="/products">
-      <img src="https://dm.victoriassecret.com/imagefeatures/0x0/1267958465282/021417-bbv-launch-shop-desktop-2-.jpg" height="300" >
-      </a>
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-
-    <div class="item">
-      <a href="/products">
-      <img src="https://dm.victoriassecret.com/imagefeatures/0x0/1267958475658/021417-bbv-launch-shop-desktop-3-.jpg"  >
-      <div class="carousel-caption">
-      </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-  </a>
-</div>
-</div>
-
+  <%= render "jumbotron"%>
 <div class="text-center index-family" style="margin-top:15px;">
   <p>Limited Time!<br>
   <strong style="font-size: 30px;">Free Bralette</strong>
@@ -133,36 +59,11 @@
   <br><br>
 </div>
 
-<a href="/products">
-<div class="container jumbotron jumbotron-1">
-  <h2></h2>
-</div>
-</a>
-
-<div class="container jumbotron jumbotron-3">
-
-</div>
-
-<div class="text-center index-family" style="margin-top:15px;">
-  <p>Limited Time!<br>
-  <strong style="font-size: 30px;">SWIN Bralette</strong>
-  </p>
-  <p style="font-size: 20px;">WITH A BODY BY VICTIORIA BRA PURCHASE</p>
-  <small>Valid on braletees uopn ot $29.22 USD Eccludes chealier & Pick.code FREEBRADDE</small>
-  <br><br>
-</div>
-
-<a href="/products">
-<div class="container jumbotron jumbotron-2">
-
-</div>
-</a>
-
 <div class="text-center" style="margin-bottom:200px;">
   <h1 style="font-size:30px;">HOT & HAPPENING</h1>
 </div>
 
-<div class="container index-footer text-center" style="margin-top:50px; padding-bottom:20px;">
+<div class="container-fluid index-footer text-center" style="margin-top:50px; padding-bottom:20px;">
   <div class="row">
     <div class="col-md-4">
       <h3>HELP</h3>
