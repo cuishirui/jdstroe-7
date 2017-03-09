@@ -33,7 +33,7 @@
   <div class="row text-center">
   <% @products.each do |product| %>
     <div class="col-xs-6 col-md-3">
-      <div class="productlist">
+      <div class="productlist-item">
       <%= link_to product_path(product) do %>
         <% if product.photos.present? %>
           <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
@@ -41,8 +41,9 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
         <% end %>
       <% end %>
-      <strong><%= simple_format(product.title) %></strong> <br>
-       <p style="font-size:20px; color:red;">￥ <%= product.price %></p>
+      <p style="font-size:20px; color:red;">￥ <%= product.price %></p>
+      <strong><%= simple_format(product.title) %></strong>
+
      </div>
       <br>
     </div>

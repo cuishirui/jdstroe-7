@@ -1,68 +1,61 @@
 <div class="row">
   <%= render "jumbotron"%>
-<div class="text-center index-family" style="margin-top:15px;">
-  <p>Limited Time!<br>
-  <strong style="font-size: 30px;">Free Bralette</strong>
-  </p>
-  <p style="font-size: 20px;">WITH A BODY BY VICTIORIA BRA PURCHASE</p>
-  <small>Valid on braletees uopn ot $29.22 USD Eccludes chealier & Pick.code FREEBRADDE</small>
-  <br><br>
-</div>
 
+<div class="text-center" style="margin-top:15px;">
+  <strong style="font-size: 30px;">从设计到选材</strong>
+  </p>
+  <p style="font-size: 20px;">我们全程是使用顶级设计师</p>
+  <p>让您穿出，自信，健康，美丽</p>
+</div>
 
 <!-- thumbnail images-->
-<div id="services" class="container">
+<div class="container">
 <div class="row">
+       <div class="col-sm-4">
+         <div class="thumbnail">
+         <a href="/products?category=swim"><img src="/images/cloth.jpeg" alt="bra"></a>
+         <p class="text-center">精挑细选 <br>
+           只为更加舒适
+         </p>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="thumbnail">
+         <a href="/products?category=lace"><img src="/images/desgin.jpeg" alt="bra"></a>
+         <p class="text-center">大师设计 <br>
+           更合您的尺寸
+         </p>
+         </div>
+       </div>
 
-   <div class="col-sm-5">
-     <div class="thumbnail text-center">
-     <a href="/products"><img src="/images/beach0.jpg" alt="bra"></a>
-     <h3>FREE BRALETTE</h3> <br><br>
-     <p>Just do yourself </p>
-     </div>
-   </div>
-   <div class="col-sm-7">
-     <div class="row">
-       <div class="col-sm-6">
+       <div class="col-sm-4">
          <div class="thumbnail">
-         <a href="/products?category=swim"><img src="/images/beach1.jpg" alt="bra"></a>
+         <a href="/products?category=sleep"><img src="/images/gitf.jpg" alt="bra"></a>
+         <p class="text-center">完美售后 <br>
+           退换随你便
+         </p>
          </div>
        </div>
-       <div class="col-sm-6">
-         <div class="thumbnail">
-         <a href="/products?category=lace"><img src="/images/beach2.jpg" alt="bra"></a>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-sm-6">
-         <div class="thumbnail">
-         <a href="/products?category=sleep"><img src="/images/beach3.jpg" alt="bra"></a>
-         </div>
-       </div>
-       <div class="col-sm-6">
-         <div class="thumbnail">
-         <a href="/products?category=love"><img src="/images/beach4.jpg" alt="bra"></a>
-         </div>
-       </div>
-     </div>
-   </div>
 </div>
 </div>
+<%= render "category"%>
 
-<div class="text-center index-family" style="margin-top:15px;">
-  <p>Limited Time!<br>
-  <strong style="font-size: 30px;">Sport Bralette</strong>
+<div class="text-center" style="margin-top:15px;  margin-bottom:50px;">
+  <p>
+  <strong style="font-size: 30px;">我们的顾客怎么说</strong>
+
   </p>
-  <p style="font-size: 20px;">WITH A BODY BY VICTIORIA BRA PURCHASE</p>
-  <small>Valid on braletees uopn ot $29.22 USD Eccludes chealier & Pick.code FREEBRADDE</small>
-  <br><br>
-</div>
 
-<div class="text-center" style="margin-bottom:200px;">
-  <h1 style="font-size:30px;">HOT & HAPPENING</h1>
 </div>
-
+<%= render "customs"%>
+<hr>
+<div class="push">
+  <div class="text-center" style="margin-top:15px;">
+    <p>
+    <strong style="font-size: 30px;">享受公主般的体验</strong>
+    </p>
+    <a href="/products" class="btn btn-lg btn-danger">立刻得到</a>
+</div>
 <div class="container-fluid index-footer text-center" style="margin-top:50px; padding-bottom:20px;">
   <div class="row">
     <div class="col-md-4">
@@ -84,8 +77,6 @@
     </div>
 
   </div>
-
-  <hr><hr>
 
   <div class="col-xs-12">
       <div class="col-xs-4">
