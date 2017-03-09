@@ -49,3 +49,24 @@
   </div>
 </div>
 </div>
+<hr>
+<div class="container">
+  <%= link_to("添加评论",new_product_comment_path(@product), class: "btn btn-primary")%>
+  <hr>
+  <table class="table">
+    <thead>
+      <th>用户</th>
+      <th>评价</th>
+      <th>评价时间</th>
+    </thead>
+    <tbody>
+      <% @comments.each do |comment|%>
+      <tr>
+      <td><%= comment.user.email%></td>
+      <td><%= comment.content%></td>
+      <td><%= comment.created_at%></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
