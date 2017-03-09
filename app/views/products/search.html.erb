@@ -49,6 +49,7 @@
               <% end %>
             <% end %>
             <p class="text-center" style="font-size:20px; margin-top:20px;"><%= link_to(render_highlight_content(product,@query_string),product_path(product)) %></p>
+            <p class="text-center" style="color:red;">￥ <%= product.price%></p>
           </div>
 
 
