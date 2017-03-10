@@ -16,6 +16,7 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
  //讨论区
 
  .thumbnail-customs img{
@@ -93,7 +94,7 @@
 }
 
  .intro-preview {
-	margin-top: 5px;
+	margin-top: 10px;
 	.intro-preview-item {
 		padding: 1px;
 		margin-right: 0px;
@@ -110,6 +111,17 @@
 }
 .fl {
   display: inline-block;
+  margin-left: 5px;
+  border: 2px;
+  border-color: red;
+}
+.intro-preview li {
+
+  border-radius:5;
+  transition: box-shadow 0.5s;
+}
+.intro-preview li:hover {
+ border: 1px solid #f4511e;
 }
 
  .productlist-item{
