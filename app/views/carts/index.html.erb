@@ -1,14 +1,14 @@
-<div class="row">
-  <div class="container">
+<div class="row product-show-bg">
+  <div class="container product-cart-index">
   <div class="col-md-12">
     <h2>我的购物车</h2>
-    <div  style="margin-bottom:0">  
+    <div  style="margin-bottom:0">
     <%= link_to("清空购物车", clean_carts_path, method: :delete,
                              class: "btn btn-sm btn-warning pull-right",
                               style: "text-decoration: underline;",
                               data: { confirm: "你确定要清空整个购物车吗？"})%>
    </div>
-    <table class="table table-bordered">
+    <table class="table table">
       <thead>
         <tr>
           <th colspan="2">商品信息</th>
@@ -20,7 +20,7 @@
       <tbody>
         <% current_cart.cart_items.each do |cart_item|%>
         <tr>
-          <td>
+          <td class="product-cart_item-show">
             <%= link_to product_path(cart_item.product) do %>
               <% if cart_item.product.photos[0].present?%>
                 <%= image_tag(cart_item.product.photos[0].avatar.thumb.url, class: "thumbnail")%>
@@ -59,7 +59,7 @@
       </span>
     </div>
    <hr>
-    <div class="checkout clearfix">
+    <div class="checkout clearfix" style="margin-bottom:15px;">
       <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right")%>
     </div>
   </div>
