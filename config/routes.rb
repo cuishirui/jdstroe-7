@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     member do
       post :add_to_cart
     end
+    resources :comments
 
     collection do
       get :search
@@ -35,7 +36,7 @@ Rails.application.routes.draw do
     member do
       post :pay_with_alipay
       post :pay_with_wechat
-      post :apply_to_cancel 
+      post :apply_to_cancel
     end
   end
 
